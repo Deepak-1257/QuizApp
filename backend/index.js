@@ -7,7 +7,7 @@ connectToMongo();
 const app = express()
 const port = 5000;
 const corsOptions={
-  origin:"http://localhost:3000" 
+  origin:"https://quizapp-0hdi.onrender.com" 
 }
 app.use(cors(corsOptions))
 app.use(express.json())
