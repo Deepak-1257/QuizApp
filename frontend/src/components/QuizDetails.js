@@ -15,7 +15,7 @@ const QuizDetail = ({ Quiz}) => {
   const handleShareQuiz = async (quizId) => {
     try {
       
-      const response = await fetch(`http://localhost:5000/api/auth/${quizId}/share`, {
+      const response = await fetch(`https://quizapp-backend-m6rv.onrender.com/api/auth/${quizId}/share`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
