@@ -179,7 +179,7 @@ router.get('/:quizId/share',async (req, res) => {
     }
 
     // Generate a unique link for the quiz
-    const link = `http://localhost:5000/api/auth/quiz/${quizId}`;
+    const link = `https://quizapp-0hdi.onrender.com/participant/${quizId}`;
 
     // Store the generated link in the quiz document or send it in the response
     quiz.link = link;
