@@ -5,7 +5,7 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
-var fetchuser = require('../middleware');
+var fetchuser = require('../middleWare');
 
 const JWT_SECRET = 'AllisWell';
 
