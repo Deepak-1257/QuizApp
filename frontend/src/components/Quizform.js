@@ -69,7 +69,7 @@ const QuizCreationForm = (props) => {
   };
   const add_quiz = async (title,description,questions) => {
     // console.log(quizData.title);
-    const response = await fetch(`http://localhost:5000/api/auth/newquiz`, {
+    const response = await fetch(`https://quizapp-backend-m6rv.onrender.com/api/auth/newquiz`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
