@@ -15,7 +15,7 @@ const ParticipantQuiz = () => {
     const getQuiz = async (req,res) => {
       // console.log(quizId)
       try {
-        const response = await fetch(`http://localhost:5000/api/auth/quiz/${quizId}`,{ 
+        const response = await fetch(`https://quizapp-backend-m6rv.onrender.com/api/auth/quiz/${quizId}`,{ 
         method: 'GET'});
          const quiz  = await response.json();
            setquiz(quiz);
