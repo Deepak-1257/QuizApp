@@ -12,7 +12,7 @@ const ParticipantForm = ( ) => {
     e.preventDefault();
 
     try {
-        const response = await fetch("http://localhost:5000/api/Participent/createParticipant", {
+        const response = await fetch("https://quizapp-backend-m6rv.onrender.com/api/Participent/createParticipant", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
